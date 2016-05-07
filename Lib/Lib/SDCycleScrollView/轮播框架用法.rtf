@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg936\cocoartf1344\cocoasubrtf720
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset134 STHeitiSC-Light;\f2\fnil\fcharset0 Consolas;
+}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red245\green245\blue245;\red225\green225\blue225;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25100\viewh17300\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+/** 
+\f1 \'b5\'b1\'c7\'b0\'b7\'d6\'d2\'b3\'bf\'d8\'bc\'fe\'d0\'a1\'d4\'b2\'b1\'ea\'d1\'d5\'c9\'ab
+\f0  */\
+@property (nonatomic, strong) UIColor *currentPageDotColor;\
+/** 
+\f1 \'c6\'e4\'cb\'fb\'b7\'d6\'d2\'b3\'bf\'d8\'bc\'fe\'d0\'a1\'d4\'b2\'b1\'ea\'d1\'d5\'c9\'ab
+\f0  */\
+@property (nonatomic, strong) UIColor *pageDotColor;\
+/** 
+\f1 \'b5\'b1\'c7\'b0\'b7\'d6\'d2\'b3\'bf\'d8\'bc\'fe\'d0\'a1\'d4\'b2\'b1\'ea\'cd\'bc\'c6\'ac
+\f0  */\
+@property (nonatomic, strong) UIImage *currentPageDotImage;\
+/** 
+\f1 \'c6\'e4\'cb\'fb\'b7\'d6\'d2\'b3\'bf\'d8\'bc\'fe\'d0\'a1\'d4\'b2\'b1\'ea\'cd\'bc\'c6\'ac
+\f0  */\
+@property (nonatomic, strong) UIImage *pageDotImage;\
+
+\f1 \'ce\'de\'cf\'de\'d1\'ad\'bb\'b7\'d7\'d4\'b6\'af\'cd\'bc\'c6\'ac\'c2\'d6\'b2\'a5\'c6\'f7
+\f0 (
+\f1 \'d2\'bb\'b2\'bd\'c9\'e8\'d6\'c3\'bc\'b4\'bf\'c9\'ca\'b9\'d3\'c3
+\f0 )\
+\pard\pardeftab720
+
+\f2\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+ // 
+\f1 \'cd\'f8\'c2\'e7\'bc\'d3\'d4\'d8\'cd\'bc\'c6\'ac\'b5\'c4\'c2\'d6\'b2\'a5\'c6\'f7
+\f2 \
+ cycleScrollView.imageURLStringsGroup = imagesURLStrings;\
+\
+ // 
+\f1 \'b1\'be\'b5\'d8\'bc\'d3\'d4\'d8\'cd\'bc\'c6\'ac\'b5\'c4\'c2\'d6\'b2\'a5\'c6\'f7
+\f2 \
+ SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame: imagesGroup:
+\f1 \'cd\'bc\'c6\'ac\'ca\'fd\'d7\'e9
+\f2 ];\
+\pard\pardeftab720
+
+\f0\fs32 \cf2 \cb4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\b\fs56 \cf2 \cb1 \expnd0\expndtw0\kerning0
+??? 
+\f1 \'ce\'aa\'ca\'b2\'c3\'b4\'ce\'d2\'d3\'c3\'d5\'e2\'b8\'f6\'c2\'d6\'b2\'a5\'c6\'da\'bb\'e1\'d4\'da\'b6\'a5\'b2\'bf\'b3\'f6\'cf\'d6\'d2\'bb\'bf\'e9\'bf\'d5\'b0\'d7\'c7\'f8\'d3\'f2
+\f0 \
+\pard\pardeftab720
+
+\f1\b0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\'d2\'d4\'cf\'c2\'ca\'c7\'b1\'be\'bf\'e2\'b5\'c4\'ca\'b9\'d3\'c3\'d5\'df\'b8\'f8\'b3\'f6\'b5\'c4\'d2\'bb\'d0\'a9\'bd\'e2\'be\'f6\'b7\'bd\'b7\'a8\'b7\'c5\'d4\'da\'d5\'e2\'c0\'ef\'b9\'a9\'b4\'f3\'bc\'d2\'b2\'ce\'bf\'bc\'a3\'ba
+\f0  
+\f1 \'d4\'da
+\f0 iOS 7
+\f1 \'d2\'d4\'ba\'f3\'a3\'ac
+\f0 controller 
+\f1 \'bb\'e1\'b6\'d4\'c6\'e4\'d6\'d0\'ce\'a8\'d2\'bb\'b5\'c4
+\f0 scrollView
+\f1 \'bb\'f2\'c6\'e4\'d7\'d3\'c0\'e0\'b5\'f7\'d5\'fb\'c4\'da\'b1\'df\'be\'e0\'a3\'ac\'b4\'d3\'b6\'f8\'b5\'bc\'d6\'c2\'ce\'bb\'d6\'c3\'b2\'bb\'d7\'bc\'c8\'b7\'a1\'a3\'c9\'e8\'d6\'c3
+\f0 self.automaticallyAdjustsScrollViewInsets = NO;
+\f1 \'bb\'f2\'d5\'df
+\f0 controller
+\f1 \'d6\'d0\'b7\'c5\'d6\'c3\'b2\'bb\'d6\'b9\'d2\'bb\'b8\'f6
+\f0 scrollView
+\f1 \'bb\'f2\'c6\'e4\'d7\'d3\'c0\'e0\'ca\'b1\'a3\'ac\'be\'cd\'b2\'bb\'bb\'e1\'b3\'f6\'cf\'d6\'d5\'e2\'d6\'d6\'ce\'ca\'cc\'e2\'a1\'a3\'d2\'d4\'c9\'cf\'d4\'ad\'d2\'f2\'ca\'c7\'ce\'d2\'b5\'c4\'b2\'c2\'b2\'e2\'a3\'ac\'d6\'bb\'d2\'aa\'ce\'d2\'c9\'e8\'d6\'c3\'c1\'cb
+\f0  self.automaticallyAdjustsScrollViewInsets = NO
+\f1 \'be\'cd\'c3\'bb\'d3\'d0\'c4\'c7\'b8\'f6\'ce\'ca\'cc\'e2\'c1\'cb\'a1\'a3
+\f0 \
+\pard\pardeftab720
+
+\b\fs72 \cf2 \expnd0\expndtw0\kerning0
+PS:\
+\pard\pardeftab720
+
+\f1\b0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\'cf\'d6\'d2\'d1\'d6\'a7\'b3\'d6
+\f0 cocoapods
+\f1 \'b5\'bc\'c8\'eb\'a3\'ba
+\f0 pod 'SDCycleScrollView','~> 1.3'\
+
+\f1 \'c8\'e7\'d0\'e8\'b8\'fc\'cf\'ea\'cf\'b8\'b5\'c4\'c9\'e8\'d6\'c3\'a3\'ac\'b2\'ce\'bf\'bc\'c8\'e7\'cf\'c2\'a3\'ba
+\f0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+cycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight; // 
+\f1 \'c9\'e8\'d6\'c3
+\f0 pageControl
+\f1 \'be\'d3\'d3\'d2\'a3\'ac\'c4\'ac\'c8\'cf\'be\'d3\'d6\'d0
+\f0 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+cycleScrollView.titlesGroup = 
+\f1 \'b1\'ea\'cc\'e2\'ca\'fd\'d7\'e9\'a3\'a8\'ca\'fd\'d7\'e9\'d4\'aa\'cb\'d8\'b8\'f6\'ca\'fd\'b1\'d8\'d0\'eb\'ba\'cd\'cd\'bc\'c6\'ac\'ca\'fd\'d7\'e9\'d4\'aa\'cb\'d8\'b8\'f6\'ca\'fd\'b1\'a3\'b3\'d6\'d2\'bb\'d6\'c2\'a3\'a9
+\f0 ; // 
+\f1 \'c8\'e7\'b9\'fb\'c9\'e8\'d6\'c3
+\f0 title
+\f1 \'ca\'fd\'d7\'e9\'a3\'ac\'d4\'f2\'bb\'e1\'d4\'da\'cd\'bc\'c6\'ac\'cf\'c2\'c3\'e6\'cc\'ed\'bc\'d3\'b1\'ea\'cc\'e2
+\f0 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+cycleScrollView.delegate = ; // 
+\f1 \'c8\'e7\'d0\'e8\'bc\'e0\'cc\'fd\'cd\'bc\'c6\'ac\'b5\'e3\'bb\'f7\'a3\'ac\'c7\'eb\'c9\'e8\'d6\'c3\'b4\'fa\'c0\'ed\'a3\'ac\'ca\'b5\'cf\'d6\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8
+\f0 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4	}\expnd0\expndtw0\kerning0
+cycleScrollView.autoScrollTimeInterval = ;// 
+\f1 \'d7\'d4\'b6\'a8\'d2\'e5\'c2\'d6\'b2\'a5\'ca\'b1\'bc\'e4\'bc\'e4\'b8\'f4}

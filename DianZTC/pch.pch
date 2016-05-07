@@ -1,0 +1,39 @@
+//
+//  pch.pch
+//  DianZTC
+//
+//  Created by 杨力 on 4/5/2016.
+//  Copyright © 2016 杨力. All rights reserved.
+//
+
+#ifndef pch_pch
+#define pch_pch
+
+#import <AFNetworking.h>
+#import "JSONModel.h"
+#import "SDCycleScrollView.h"
+#import "UIImageView+WebCache.h"
+#import "YLAutoLayOut.h"
+#import "Tools.h"
+#import "StringConstants.h"
+#import "CommonDefin.h"
+#import "Common.h"
+#import "ButtonSize.h"
+#import "NSDate+Extension.h"
+#import "NSString+PJR.h"
+#import "UIBarButtonItem+Extesion.h"
+#import "UIColor+RandomColor.h"
+#import "UIImage+Extesion.h"
+#import "UILabel+Extension.h"
+#import "UILabel+LXAdd.h"
+#import "UIView+Extesion.h"
+#import "GuideView.h"
+#import "ColorComment.h"
+
+
+//界面及代理类
+#import "AppDelegate.h"
+#import "FirstViewController.h"
+#import "WelcomeViewController.h"
+
+#endif /* pch_pch */
