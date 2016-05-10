@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7C5D0220687278D694CD9400 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A43219DD68280B621D46F26 /* libPods.a */; };
+		8F09A6DB1CE227350037DC28 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F09A6DA1CE227350037DC28 /* test.m */; };
+		8F09A7841CE29F1F0037DC28 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F09A7831CE29F1F0037DC28 /* Utility.m */; };
 		8F0DBB091CDBA16700C1DF2F /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0DBB081CDBA16700C1DF2F /* logo@3x.png */; };
 		8F0DBB0B1CDBA16D00C1DF2F /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0DBB0A1CDBA16D00C1DF2F /* logo@2x.png */; };
 		8F12D39F1CDE32ED00712CDA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12D39E1CDE32ED00712CDA /* DetailViewController.m */; };
+		8F12D4151CDE90F900712CDA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8F12D4141CDE90F900712CDA /* README.md */; };
 		8F4A18251CDAB0CA006ED857 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4A18241CDAB0CA006ED857 /* main.m */; };
 		8F4A18281CDAB0CA006ED857 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4A18271CDAB0CA006ED857 /* AppDelegate.m */; };
 		8F4A182E1CDAB0CA006ED857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A182C1CDAB0CA006ED857 /* Main.storyboard */; };
@@ -106,6 +109,8 @@
 		8F4A19A41CDABD63006ED857 /* Tel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A19981CDABD63006ED857 /* Tel@3x.png */; };
 		8F4A19A51CDABD63006ED857 /* web@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A19991CDABD63006ED857 /* web@3x.png */; };
 		8F4A19A61CDABD63006ED857 /* xilie1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A199A1CDABD63006ED857 /* xilie1@3x.png */; };
+		8F51FA761CE15DA200B128C5 /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F51FA751CE15DA200B128C5 /* ThemeViewController.m */; };
+		8F51FA791CE1647300B128C5 /* ThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F51FA781CE1647300B128C5 /* ThemeCell.m */; };
 		8F5667F41CDCEF0400C39F75 /* GongYiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5667F31CDCEF0400C39F75 /* GongYiCell.m */; };
 		8F5667F71CDCF65100C39F75 /* CaizhiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5667F61CDCF65100C39F75 /* CaizhiCell.m */; };
 		8F5667FA1CDCF80600C39F75 /* WaixingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5667F91CDCF80600C39F75 /* WaixingCell.m */; };
@@ -159,10 +164,15 @@
 		0A43219DD68280B621D46F26 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		452373736433AA54E329326B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6AFFCA3009F291B13E58C517 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8F09A6D91CE227350037DC28 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		8F09A6DA1CE227350037DC28 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		8F09A7821CE29F1F0037DC28 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		8F09A7831CE29F1F0037DC28 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		8F0DBB081CDBA16700C1DF2F /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
 		8F0DBB0A1CDBA16D00C1DF2F /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		8F12D39D1CDE32ED00712CDA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		8F12D39E1CDE32ED00712CDA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8F12D4141CDE90F900712CDA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8F4A18201CDAB0CA006ED857 /* DianZTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianZTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4A18241CDAB0CA006ED857 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F4A18261CDAB0CA006ED857 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -329,6 +339,10 @@
 		8F4A19981CDABD63006ED857 /* Tel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tel@3x.png"; sourceTree = "<group>"; };
 		8F4A19991CDABD63006ED857 /* web@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web@3x.png"; sourceTree = "<group>"; };
 		8F4A199A1CDABD63006ED857 /* xilie1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xilie1@3x.png"; sourceTree = "<group>"; };
+		8F51FA741CE15DA200B128C5 /* ThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeViewController.h; sourceTree = "<group>"; };
+		8F51FA751CE15DA200B128C5 /* ThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeViewController.m; sourceTree = "<group>"; };
+		8F51FA771CE1647300B128C5 /* ThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeCell.h; sourceTree = "<group>"; };
+		8F51FA781CE1647300B128C5 /* ThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeCell.m; sourceTree = "<group>"; };
 		8F5667F21CDCEF0400C39F75 /* GongYiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GongYiCell.h; sourceTree = "<group>"; };
 		8F5667F31CDCEF0400C39F75 /* GongYiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GongYiCell.m; sourceTree = "<group>"; };
 		8F5667F51CDCF65100C39F75 /* CaizhiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaizhiCell.h; sourceTree = "<group>"; };
@@ -456,6 +470,7 @@
 		8F4A18171CDAB0CA006ED857 = {
 			isa = PBXGroup;
 			children = (
+				8F12D4141CDE90F900712CDA /* README.md */,
 				8F4A195B1CDAB5ED006ED857 /* pch.pch */,
 				8F4A18221CDAB0CA006ED857 /* DianZTC */,
 				8F4A183C1CDAB0CA006ED857 /* DianZTCTests */,
@@ -603,6 +618,8 @@
 		8F4A185B1CDAB450006ED857 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8F09A7821CE29F1F0037DC28 /* Utility.h */,
+				8F09A7831CE29F1F0037DC28 /* Utility.m */,
 				8F4A19641CDABA01006ED857 /* GuideView.h */,
 				8F4A19651CDABA01006ED857 /* GuideView.m */,
 			);
@@ -612,6 +629,7 @@
 		8F4A185C1CDAB450006ED857 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8F51FA701CE15D9400B128C5 /* ThemeViewController */,
 				8F12D3991CDE32C800712CDA /* DetailViewController */,
 				8F56680B1CDD401900C39F75 /* SearchCatagoryViewController */,
 				8F5668011CDD25FF00C39F75 /* SerizeViewController */,
@@ -859,6 +877,43 @@
 			);
 			name = "@3x";
 			path = "../@3x";
+			sourceTree = "<group>";
+		};
+		8F51FA701CE15D9400B128C5 /* ThemeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F51FA731CE15D9400B128C5 /* ViewController */,
+				8F51FA711CE15D9400B128C5 /* Cell */,
+				8F51FA721CE15D9400B128C5 /* Model */,
+			);
+			path = ThemeViewController;
+			sourceTree = "<group>";
+		};
+		8F51FA711CE15D9400B128C5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8F51FA771CE1647300B128C5 /* ThemeCell.h */,
+				8F51FA781CE1647300B128C5 /* ThemeCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8F51FA721CE15D9400B128C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F09A6D91CE227350037DC28 /* test.h */,
+				8F09A6DA1CE227350037DC28 /* test.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F51FA731CE15D9400B128C5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F51FA741CE15DA200B128C5 /* ThemeViewController.h */,
+				8F51FA751CE15DA200B128C5 /* ThemeViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		8F5668011CDD25FF00C39F75 /* SerizeViewController */ = {
@@ -1312,6 +1367,7 @@
 				8F8DDB901CDBF38B00F04D0C /* CatagoryViewController.m in Sources */,
 				8F4A194C1CDAB580006ED857 /* SDWebImageDecoder.m in Sources */,
 				8F12D39F1CDE32ED00712CDA /* DetailViewController.m in Sources */,
+				8F51FA791CE1647300B128C5 /* ThemeCell.m in Sources */,
 				8F4A18891CDAB463006ED857 /* UIView+Extesion.m in Sources */,
 				8F5668071CDD262500C39F75 /* SerizeViewController.m in Sources */,
 				8F4A19491CDAB580006ED857 /* NSData+ImageContentType.m in Sources */,
@@ -1319,6 +1375,7 @@
 				8F4A18281CDAB0CA006ED857 /* AppDelegate.m in Sources */,
 				8F5668141CDD765900C39F75 /* SingleSearchCatagoryViewController.m in Sources */,
 				8F4A19441CDAB580006ED857 /* SDCollectionViewCell.m in Sources */,
+				8F51FA761CE15DA200B128C5 /* ThemeViewController.m in Sources */,
 				8F4A193E1CDAB580006ED857 /* UIScrollView+MJRefresh.m in Sources */,
 				8F4A195F1CDAB78C006ED857 /* Common.m in Sources */,
 				8F4A18821CDAB463006ED857 /* NSString+PJR.m in Sources */,
@@ -1356,11 +1413,14 @@
 				8F4A19301CDAB580006ED857 /* JSONModelClassProperty.m in Sources */,
 				8F4A18871CDAB463006ED857 /* UILabel+Extension.m in Sources */,
 				8F4A18251CDAB0CA006ED857 /* main.m in Sources */,
+				8F09A6DB1CE227350037DC28 /* test.m in Sources */,
 				8F4A19411CDAB580006ED857 /* TAAnimatedDotView.m in Sources */,
 				8F4A19341CDAB580006ED857 /* JSONHTTPClient.m in Sources */,
 				8F4A194B1CDAB580006ED857 /* SDWebImageCompat.m in Sources */,
 				8F4A193A1CDAB580006ED857 /* MJRefreshConst.m in Sources */,
+				8F09A7841CE29F1F0037DC28 /* Utility.m in Sources */,
 				8F4A194A1CDAB580006ED857 /* SDImageCache.m in Sources */,
+				8F12D4151CDE90F900712CDA /* README.md in Sources */,
 				8F5667F71CDCF65100C39F75 /* CaizhiCell.m in Sources */,
 				8F4A194E1CDAB580006ED857 /* SDWebImageDownloaderOperation.m in Sources */,
 				8F4A192E1CDAB580006ED857 /* JSONModel.m in Sources */,

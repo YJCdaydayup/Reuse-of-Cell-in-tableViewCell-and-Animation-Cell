@@ -9,6 +9,7 @@
 #import "FirstViewController.h"
 #import "CatagoryViewController.h"
 #import "DetailViewController.h"
+#import "ThemeViewController.h"
 #import "SerizeCell.h"
 #import "ProductCell.h"
 
@@ -29,6 +30,12 @@
 @property (nonatomic,strong) SDCycleScrollView * cycleScrollView;
 //Logo的View
 @property (nonatomic,strong) UIView * logoView;
+
+//四个主题图片
+@property (nonatomic,strong) UIImageView * imageView1;
+@property (nonatomic,strong) UIImageView * imageView2;
+@property (nonatomic,strong) UIImageView * imageView3;
+@property (nonatomic,strong) UIImageView * imageView4;
 
 //适配工具
 @property (nonatomic,assign) CGFloat max_X;
@@ -119,21 +126,24 @@
 //设置表格frame
 -(void)setTableView{
     
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NAV_BAR_HEIGHT, Wscreen, Hscreen-NAV_BAR_HEIGHT) style:UITableViewStylePlain];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0,NAV_BAR_HEIGHT, Wscreen, Hscreen-NAV_BAR_HEIGHT) style:UITableViewStylePlain];
     self.tableView.backgroundColor = TABLEVIEWCOLOR;
     self.tableView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    //设置表头
-    self.tableView.tableHeaderView = self.cycleScrollView;
     self.tableView.tableFooterView = [[UIView alloc]init];
-    [self.tableView reloadData];
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.tableView.tableHeaderView = self.cycleScrollView;
     
     [self.tableView registerClass:[SerizeCell class] forCellReuseIdentifier:serizeCell];
     [self.tableView registerClass:[ProductCell class] forCellReuseIdentifier:productCell];
 }
+
 
 //表格的代理方法
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -156,6 +166,17 @@
             cell = [[SerizeCell alloc]init];
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        //各种主题的图片设置
+        self.imageView1 = cell.bSImageView;
+        self.imageView2 = cell.hQImageView;
+        self.imageView3 = cell.serizeImageView;
+        self.imageView4 = cell.hotImageView;
+        
+        [self configSerizeImageView:cell.bSImageView];
+        [self configSerizeImageView:cell.hQImageView];
+        [self configSerizeImageView:cell.serizeImageView];
+        [self configSerizeImageView:cell.hotImageView];
         return cell;
         
     }else{
@@ -195,6 +216,43 @@
         
         return cell;
     }
+}
+
+//给主题图片添加设置
+-(void)configSerizeImageView:(UIImageView *)imageView{
+    
+    imageView.userInteractionEnabled = YES;
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(goForwardToThemeViewController:)];
+    [imageView addGestureRecognizer:tap];
+}
+
+//跳转到各种的主题界面
+-(void)goForwardToThemeViewController:(UITapGestureRecognizer *)tap{
+    
+    NSArray * array = @[@"芭莎系列",@"婚庆系列",@"系列产品",@"热搜产品"];
+    
+    ThemeViewController * themeVc = [[ThemeViewController alloc]init];
+
+    UIImageView* imageView = (UIImageView *)tap.view;
+    if(imageView == self.imageView1){
+        
+        themeVc.themeTitle = array[0];
+    }else if(imageView == self.imageView2){
+        
+        themeVc.themeTitle = array[1];
+    }else if(imageView == self.imageView3){
+        themeVc.themeTitle = array[2];
+    }else{
+        themeVc.themeTitle = array[3];
+    }
+    
+    CATransition * animation = [CATransition animation];
+    animation.type = @"cube";
+    animation.duration = 0.6f;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
+    animation.subtype = kCATransitionFromRight;
+    [self.navigationController.view.layer addAnimation:animation forKey:@"234"];
+    [self.navigationController pushViewController:themeVc animated:NO];
 }
 
 //给首页的图片添加手势
@@ -397,7 +455,7 @@
                                       @"http://pic.58pic.com/58pic/13/80/10/94f58PICvp8_1024.jpg",
                                       @"http://upload.dahangzhou.com/merchant/2009/9/16/20099161519204983.jpg"
                                       ];
-        _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0,0,Wscreen,150*ScreenMultipleIn6) delegate:self placeholderImage:[UIImage imageWithCaputureView:self.view]];
+        _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0,0*ScreenMultipleIn6,Wscreen,150*ScreenMultipleIn6) delegate:self placeholderImage:[UIImage imageWithCaputureView:self.view]];
         _cycleScrollView.imageURLStringsGroup = imagesURLStrings;
         _cycleScrollView.delegate = self;
         _cycleScrollView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
@@ -407,6 +465,7 @@
         _cycleScrollView.pageDotImage = [UIImage imageNamed:@"lb2"];
         _cycleScrollView.pageDotColor = RGB_COLOR(221, 193, 191, 1);
         _cycleScrollView.pageControlDotSize = CGSizeMake(8*ScreenMultipleIn6,8*ScreenMultipleIn6);
+        _cycleScrollView.contentMode = UIViewContentModeScaleAspectFill;
     }
     
     return _cycleScrollView;

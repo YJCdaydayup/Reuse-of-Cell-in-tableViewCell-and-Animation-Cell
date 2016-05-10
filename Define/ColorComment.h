@@ -27,5 +27,8 @@
 //品类的按钮个数
 #define PINLEICOUNT 26
 
+//持久化NSUserDefault
+#define kUserDefaults [NSUserDefaults standardUserDefaults]
+
 
 #endif /* ColorComment_h */
